@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_login"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Selamat Datang\ndi KasirKu POS"
+            android:fontFamily="@font/montserrat_bold"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Masukkan OTP untuk memulai\naplikasi ."
+            android:fontFamily="@font/montserrat_light"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="45dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:elevation="8dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:padding="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OTP Akun"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_bold"/>
+
+                    <!-- Email Layout -->
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_below="@+id/title"
+                        android:layout_width="280dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_mail"/>
+                        <EditText
+                            android:id="@+id/otp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="12dp"
+                            android:theme="@style/Theme.Material3.Light"
+                            android:textColorHint="#8B000000"
+                            android:padding="15dp"
+                            android:inputType="number"
+                            android:hint="Kode OTP"
+                            android:maxLength="6"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_light"/>
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="12dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/ll1"
+                        android:layout_width="260dp"
+                        android:layout_height="46dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        android:backgroundTint="#A39EFF">
+                        <Button
+                            android:id="@+id/start"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="#A39EFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Mulai"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

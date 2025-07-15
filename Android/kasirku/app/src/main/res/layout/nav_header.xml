@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#221D8E">
+
+    <ImageView
+        android:id="@+id/imgAdmin"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_admin"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/txtAdminName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

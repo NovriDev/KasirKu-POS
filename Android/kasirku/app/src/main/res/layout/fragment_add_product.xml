@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Placeholder Gambar -->
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Product Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nama Produk -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Produk"
+        android:inputType="text"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:theme="@style/Theme.Material3.Light"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- SKU -->
+    <EditText
+        android:id="@+id/edtSKU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Kode Produk"
+        android:inputType="text"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:theme="@style/Theme.Material3.Light"
+        app:layout_constraintTop_toBottomOf="@id/edtName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Harga -->
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Harga (Rp)"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:theme="@style/Theme.Material3.Light"
+        app:layout_constraintTop_toBottomOf="@id/edtSKU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Stok Awal -->
+    <EditText
+        android:id="@+id/edtStockInitial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Stok Awal"
+        android:inputType="number"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:theme="@style/Theme.Material3.Light"
+        app:layout_constraintTop_toBottomOf="@id/edtPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Stok Sekarang -->
+    <EditText
+        android:id="@+id/edtStockCurrent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Stok Sekarang"
+        android:inputType="number"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:theme="@style/Theme.Material3.Light"
+        app:layout_constraintTop_toBottomOf="@id/edtStockInitial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan Produk"
+        android:backgroundTint="#89FF00"
+        app:layout_constraintTop_toBottomOf="@id/edtStockCurrent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

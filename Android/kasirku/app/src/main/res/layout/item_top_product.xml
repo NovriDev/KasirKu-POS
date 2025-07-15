@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produk"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/productProgress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_xp" />
+
+    <TextView
+        android:id="@+id/productSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 pcs"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

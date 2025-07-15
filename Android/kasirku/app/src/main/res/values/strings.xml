@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KasirKu POS</string>
+    <string name="register">Belum punya akun? <b>Daftar disini</b></string>
+    <string name="login">Sudah punya akun? <b>Masuk disini</b></string>
+</resources>

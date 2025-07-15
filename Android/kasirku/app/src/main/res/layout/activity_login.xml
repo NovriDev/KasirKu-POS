@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_login"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Selamat Datang \nKembali"
+            android:fontFamily="@font/montserrat_bold"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Login untuk memulai aplikasi."
+            android:fontFamily="@font/montserrat_light"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="45dp"
+            android:layout_width="300dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:elevation="8dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:padding="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login Admin"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_bold"/>
+
+                    <!-- Email Layout -->
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_below="@+id/title"
+                        android:layout_width="280dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_mail"/>
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="12dp"
+                            android:theme="@style/Theme.Material3.Light"
+                            android:textColorHint="#8B000000"
+                            android:padding="15dp"
+                            android:inputType="textEmailAddress"
+                            android:hint="Alamat Email"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_light"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_below="@+id/ll1"
+                        android:layout_width="280dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_pw"/>
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="12dp"
+                                android:padding="15dp"
+                                android:theme="@style/Theme.Material3.Light"
+                                android:textColorHint="#8B000000"
+                                android:inputType="textPassword"
+                                android:hint="Password"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/montserrat_light"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/show_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_show_pw"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="12dp"
+                            android:tooltipText="Tampilkan password"/>
+                    </RelativeLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="12dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/rl1"
+                        android:layout_width="260dp"
+                        android:layout_height="46dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        android:backgroundTint="#A39EFF">
+                        <Button
+                            android:id="@+id/send_otp"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="#A39EFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Kirim OTP"/>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/register"
+                        android:textSize="12sp"
+                        android:padding="8dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/register"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
