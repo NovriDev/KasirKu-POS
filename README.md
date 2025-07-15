@@ -1,6 +1,6 @@
-# 📱 KasirKU — Aplikasi Kasir Android & Laravel API
+# 📱 KasirKu — Aplikasi Kasir Android & Laravel API
 
-**KasirKU** adalah aplikasi kasir berbasis Android yang terintegrasi dengan backend Laravel.  
+**KasirKu** adalah aplikasi kasir berbasis Android yang terintegrasi dengan backend Laravel.  
 Dirancang untuk membantu UMKM dalam mengelola transaksi, produk, dan pelanggan.
 
 ## Fitur Utama
